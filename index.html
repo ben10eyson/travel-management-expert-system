@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expert System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Expert System</h1>
+        <form id="travel-form">
+            <div class="input-group">
+                <label for="weather">Preferred Weather:</label>
+                <select id="weather" required>
+                    <option value="1">Warm</option>
+                    <option value="2">Cold</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="budget">Budget:</label>
+                <select id="budget" required>
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">High</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="travel-type">Type of Trip:</label>
+                <select id="travel-type" required>
+                    <option value="1">Adventure</option>
+                    <option value="2">Relaxation</option>
+                    <option value="3">Cultural</option>
+                </select>
+            </div>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>

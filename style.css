@@ -1,0 +1,130 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page Background */
+body {
+    background-image: url('https://media.istockphoto.com/id/1292399669/photo/aerial-photograph-rural-landscape-farms-villages-picturesque-green-patchwork-pasture.jpg?s=612x612&w=0&k=20&c=6OXgL0cwGEYLphP5q__ehjZhbIjVPW2tWCVQKMh0VGQ=');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Glassmorphism Box */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Dark Transparent */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading */
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Updated Input and Dropdown Styling */
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.5); /* Light Transparent White */
+    color: black;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input:hover, select:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #0041a3);
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 91, 187, 0.5);
+}
+
+/* Result Section */
+.result {
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.result ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.result li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.result li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
